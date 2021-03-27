@@ -1,8 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function transform(arr) {
-  //throw new CustomError('Not implemented');
-  // remove line with error and write your code here
   if (!Array.isArray(arr)) {
     throw new Error();
   }
@@ -37,25 +35,4 @@ module.exports = function transform(arr) {
     }
   }
   return newArr;
-  // for (let i = 0; i < arr.length; i++) {
-  //   if (arr[i] === "--discard-next") {
-  //     newArr.splice(arr[i], 2);
-  //   } else if (arr[i] === "--discard-next" && arr[i + 1] === undefined) {
-  //     newArr.splice(arr[i], 1);
-  //   } else if (arr[0] === "--discard-prev") {
-  //     newArr.splice(arr[0], 1);
-  //   } else if (arr[i] === "--discard-prev") {
-  //     newArr.splice(arr[i], 1);
-  //   } else if (arr[i] === "--double-next") {
-  //     newArr.splice(arr[i], 1, arr[i + 1]);
-  //   } else if (arr[i] === "--double-next" && arr[i + 1] === undefined) {
-  //     newArr.splice(arr[i], 1);
-  //   } else if (arr[i] === "--double-prev") {
-  //     newArr.splice(arr[i], 1, arr[i - 1]);
-  //   } else if (arr[0] === "--double-prev") {
-  //     newArr.splice(arr[0], 1);
-  //   }
-  //   return newArr;
-  // }
-  // return newArr;
 };
